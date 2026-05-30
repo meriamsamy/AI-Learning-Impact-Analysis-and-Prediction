@@ -5,10 +5,17 @@ import skfuzzy as fuzz
 import streamlit as st
 
 
-xgb_pipeline = joblib.load("gpa_model.pkl")
-stacking_model = joblib.load("burnout_model.pkl")
-scaler = joblib.load("scaler.pkl")
-cntr = joblib.load("fuzzy_centers.pkl")
+import traceback
+import sys
+
+try:
+    xgb_pipeline = joblib.load("gpa_model.pkl")
+    stacking_model = joblib.load("burnout_model.pkl")
+    scaler = joblib.load("scaler.pkl")
+    cntr = joblib.load("fuzzy_centers.pkl")
+except Exception as e:
+    st.error(f"Failed to load models: {e}")
+    st.stop()
 
 
 
