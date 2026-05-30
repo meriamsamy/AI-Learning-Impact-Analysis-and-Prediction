@@ -6,7 +6,7 @@ A machine learning project analyzing how generative AI tool usage affects univer
 
 ## 📊 Dataset
 
-`ai_student_impact_dataset.csv` — student-level records covering:
+[ai_student_impact_dataset.csv](https://www.kaggle.com/datasets/laveshjadon/ai-impact-on-students) — student-level records covering:
 AI usage habits, study patterns, GPA, anxiety levels, and institutional policies.
 
 ---
