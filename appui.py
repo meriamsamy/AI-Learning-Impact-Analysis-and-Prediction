@@ -226,26 +226,26 @@ if st.button("Predict"):
     'Anxiety_Level_During_Exams'
 ]
 
-    x_scaled = scaler.transform(input_df[fuzz_features])
-    x_fuzzy = x_scaled.T
+    #x_scaled = scaler.transform(input_df[fuzz_features])
+    #x_fuzzy = x_scaled.T
 
-    u, u0, d, jm, p, fpc= fuzz.cluster.cmeans_predict(
-        x_fuzzy,
-        cntr,
-        m=1.3,
-        error=0.005,
-        maxiter=1000
-    )
+    #u, u0, d, jm, p, fpc= fuzz.cluster.cmeans_predict(
+        #x_fuzzy,
+        #cntr,
+        #m=1.3,
+        #error=0.005,
+        #maxiter=1000
+    #)
 
-    cluster = np.argmax(u, axis=0)[0]
+    #cluster = np.argmax(u, axis=0)[0]
     burnout_label = burnout_map[burnout_pred]
-    advice = recommend(cluster, burnout_label)
-    membership = u[:, 0]
+    #advice = recommend(cluster, burnout_label)
+    #membership = u[:, 0]
 
 
     st.subheader("Results")
 
-    cluster_label = cluster_names[cluster]
+    #cluster_label = cluster_names[cluster]
     burnout_level = burnout_labels[burnout_pred]
 
 
@@ -254,11 +254,11 @@ if st.button("Predict"):
     st.write("skill retention score:", skill_score)
 
     st.write("Burnout Level:", burnout_level)
-    st.write("Cluster:", cluster_label)
-    st.write(f"AI-Dependent Learners: {membership[0]*100:.2f}%")
-    st.write(f"Traditional Balanced Learners: {membership[1]*100:.2f}%")
-    st.write(f"Stable Low-Stress Traditional Learners: {membership[2]*100:.2f}%")
-    st.write("Recommendation:", advice)
+    #st.write("Cluster:", cluster_label)
+    #st.write(f"AI-Dependent Learners: {membership[0]*100:.2f}%")
+    #st.write(f"Traditional Balanced Learners: {membership[1]*100:.2f}%")
+    #st.write(f"Stable Low-Stress Traditional Learners: {membership[2]*100:.2f}%")
+    #st.write("Recommendation:", advice)
 
 
 
