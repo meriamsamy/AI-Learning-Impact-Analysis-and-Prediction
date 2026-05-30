@@ -233,7 +233,7 @@ if st.button("Predict"):
     'Anxiety_Level_During_Exams'
 ]
 
-    x_scaled = scaler.transform(input_df[fuzz_features])
+    x_scaled = scaler.transform(input_df[fuzz_features].values)
     x_fuzzy = x_scaled.T
 
     u, u0, d, jm, p, fpc= fuzz.cluster.cmeans_predict(
