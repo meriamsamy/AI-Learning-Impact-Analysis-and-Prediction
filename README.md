@@ -114,5 +114,4 @@ and returns tailored study advice depending on student behavior patterns.
 ## 🚀 Live Demo
 
 You can access the deployed web application here:
-
-👉 [[(https://ai-learning-impact-analysis-and-prediction-9dcwumnls2bduzbjjmj.streamlit.app/)](https://github.com/meriamsamy/AI-Learning-Impact-Analysis-and-Prediction/tree/main)](https://ai-learning-impact-analysis-and-prediction-9dcwumnls2bduzbjjmj.streamlit.app/)
+🚀 **Live App:** https://ai-learning-impact-analysis-and-prediction-9dcwumnls2bduzbjjmj.streamlit.app/  
